@@ -1,0 +1,280 @@
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+body{
+    line-height: 1.7;
+}
+
+html{
+    height: 100%;
+}
+
+.bgig{
+    background-image: url("https://cdn.pixabay.com/photo/2024/04/09/22/28/trees-8686902_1280.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 475px ;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px 0px 50px 0px; 
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+
+#searchBox{
+    width: 65%;
+    max-width: 600px;
+    padding: 22.5px 20px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.6);
+    font-size: 12px;
+    color: #423f3a;
+}
+
+
+#searchBtn{
+    width: 85px;
+    padding: 22.5px 20px;
+    background-color: #ffa200;
+    border: none;
+    box-shadow: 5px 0 10px rgba(0, 0,0, 0.6);
+    color: aliceblue;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#searchBtn:hover{
+    opacity: 0.7;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 0px 20px 0px;   
+    box-shadow: 5px 0 10px rgba(0, 0,0, 0.3); 
+    padding: 10px 0 10px 20px;
+    text-transform:uppercase;
+    color:#ffa200;
+}
+ .Categories{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto; 
+ }
+
+ .category{
+    margin-bottom: 40px;
+    width: 30%;
+    height: 100%;
+    box-shadow: 5px 0 10px rgba(0, 0,0, 0.3);
+    border-radius: 8px;
+    overflow: hidden; 
+    transition: transform 0.15s ease-in-out;
+ }
+
+ .category:hover{
+    transform: scale(1.1);
+ }
+ .category img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+ }
+
+ .category:hover img{
+    opacity: 0.8;
+    cursor: pointer;
+ }
+ .category a{
+    font-size: 20px;
+    text-decoration: none;
+    color:#ffa200;
+    display: block;
+    text-align: center;
+ }
+
+ .category:hover a{
+    color: #60420eca;
+ }
+
+#showMoreBtn{
+    display: none;
+    width: 125px;
+    padding: 20px 20px;
+    background-color: #0828f9;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 5px 0 10px rgba(0, 0,0, 0.6);
+    color: aliceblue;
+    cursor: pointer;
+    transition: opacity  0.12s ease-in-out, transform  0.12s ease-in-out;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+#showMore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#showMoreBtn:hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+#newList{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+#buttons1{
+    text-decoration: none;
+    margin: 20px;
+    border: 1px solid rgba(248, 242, 242, 0.457);
+    padding: 5px 15px;
+    color: aliceblue;
+    background-color: #0e0d0d42;
+    border-radius: 8px;
+    text-transform: uppercase;
+    box-shadow: 5px 0 10px rgba(0, 0,0, 0.8);
+}
+
+#buttons1:hover{
+   background-color:  #0e0d0dbe;;
+}
+
+#suggestionResults{
+    font-size: 20px;
+    font-weight:bold;
+    box-shadow: 5px 0 10px rgba(0, 0,0, 0.3); 
+    margin: 0px 0px 20px 0px;   
+    padding: 10px 0 10px 20px;
+    text-transform:capitalize;
+    color:#00b3ff;
+    display: none;
+}
+
+#BackButton{
+    display: none;
+    width: 125px;
+    padding: 20px 20px;
+    background-color: #149d12;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 5px 0 10px rgba(0, 0,0, 0.6);
+    color: aliceblue;
+    cursor: pointer;
+    transition: opacity  0.12s ease-in-out, transform  0.12s ease-in-out;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    border-radius: 8px;
+    transition: opacity  0.12s ease-in-out, transform  0.12s ease-in-out;    
+}
+
+#BackButton:hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+#Bbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.852);
+}
+
+.modalContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffa200;
+    background-color: #fefdfa;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 40px;
+    box-shadow: 5px 0 10px rgba(0, 0,0, 0.3);
+    border-radius: 8px;
+    overflow: hidden; 
+    text-transform: capitalize;
+}
+.modal img{
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.close{
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 180px;
+}
+
+#ModalResults{
+    margin-top: 20px;
+}
+
+#downloadButton{
+    color:rgb(223, 208, 0); 
+    text-decoration: none;
+    background-color: red;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#Wm{
+    font-size: 10px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 10px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <title>Pixabay Image Gallery</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="bgig">
+            <ul id="newList">
+                <li><a href = "index.html" id="buttons1">Home</a></li>
+                <li><a href = "About.html" id="buttons1">About</a></li>
+                <li><a href = "contact.html" id="buttons1">Contact Us</a></li>
+            </ul>
+        <h1>Pixabay Image Gallery</h1>
+        <h3>Generate your dreams</h3>
+        <form action="">
+            <input type="text" id="searchBox" placeholder="Enter your keywords...">
+            <button id="searchBtn">Search</button>
+        </form>
+        </div>
+        <h2>Categories</h2>
+        <div id="ModalResults"></div>
+        <div id="suggestionResults"></div>
+        <div class="Categories">
+            <div class="category">
+                <img src="https://cdn.pixabay.com/photo/2024/02/20/13/21/mountains-8585535_1280.jpg" alt="Mountains" class="suggImg">
+                <a href="" class="searchLink">Mountains</a>
+            </div>
+            <div class="category">
+                <img src="https://cdn.pixabay.com/photo/2023/10/12/08/23/bird-8310172_1280.png" alt="Birds" class="suggImg">
+                <a href="" class="searchLink">Birds</a>
+            </div>
+            <div class="category">
+                <img src="https://cdn.pixabay.com/photo/2023/09/03/12/16/lizard-8230594_1280.png" alt="Reptiles" class="suggImg">
+                <a href="" class="searchLink">Reptiles</a>
+            </div>
+            <div class="category">
+                <img src="https://cdn.pixabay.com/photo/2024/09/02/20/49/goat-9017896_1280.jpg" alt="Mammals" class="suggImg">
+                <a href="" class="searchLink">Mammals</a>
+            </div>
+            <div class="category">
+                <img src="https://cdn.pixabay.com/photo/2023/04/28/12/18/dogs-7956516_1280.jpg" alt="Dogs" class="suggImg">
+                <a href="" class="searchLink">Dogs</a>
+            </div>
+            <div class="category">
+                <img src="https://cdn.pixabay.com/photo/2023/07/21/16/23/cat-8141916_1280.jpg" alt="Cats" class="suggImg">
+                <a href="" class="searchLink">Cats</a>
+            </div>
+            <div class="category">
+                <img src="https://cdn.pixabay.com/photo/2023/10/31/18/18/forest-8355748_1280.jpg" alt="Forest" class="suggImg">
+                <a href="" class="searchLink">Forest</a>
+            </div>
+            <div class="category">
+                <img src="https://cdn.pixabay.com/photo/2024/02/10/00/53/biryani-8563961_1280.jpg" alt="Biryani" class="suggImg">
+                <a href="" class="searchLink">Biryani</a>
+            </div>
+            <div class="category">
+                <img src="https://cdn.pixabay.com/photo/2012/11/28/11/11/football-67701_1280.jpg" alt="Sports" class="suggImg">
+                <a href="" class="searchLink">Sports</a>
+            </div>
+            <div class="category">
+                <img src="https://cdn.pixabay.com/photo/2016/11/18/15/58/vw-1835506_1280.jpg" alt="Cars" class="suggImg">
+                <a href="" class="searchLink">Cars</a>
+            </div>
+            <div class="category">
+                <img src="https://cdn.pixabay.com/photo/2020/02/23/12/22/river-4873198_1280.jpg" alt="Places" class="suggImg">
+                <a href="" class="searchLink">Places</a>
+            </div>
+            <div class="category">
+                <img src="https://cdn.pixabay.com/photo/2015/03/04/12/59/bells-flower-658751_1280.jpg" alt="Flowers" class="suggImg">
+                <a href="" class="searchLink">Flowers</a>
+            </div>
+        </div> 
+        <div id="showMore">
+            <button id="showMoreBtn">Show More</button>
+            <button id="BackButton">Back</button>
+        </div>
+        <div id="NewModal" class="modal">
+            <span class="close" id="closeModal">&times;</span>
+            <div class = "modalContent">
+                <img id="modalImage" src="" alt="">
+                <p id="modalText"></p>
+                <a id="downloadButton" href="#">Download</a>
+            </div>
+        </div>
+        <div id="Wm">Created By Syed Amaan Tauheed</div>
+        <script src="script.js"></script>
+    </body>
+</html>

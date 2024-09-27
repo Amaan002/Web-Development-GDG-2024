@@ -1,0 +1,110 @@
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+body{
+    line-height: 1.7;
+}
+
+html{
+    height: 100%;
+}
+
+.bgig{
+    background-image: url("https://cdn.pixabay.com/photo/2024/04/09/22/28/trees-8686902_1280.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+h1{
+    font-size: 80px;
+    font-weight: bold;
+    padding-top: 80px;
+    padding-left: 100px;
+    color: aliceblue;
+    text-shadow: 6px 4px 10px rgba(0, 0,0, 0.8);
+}
+
+p{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 60px;
+    padding-left: 80px;
+    color: aliceblue;  
+    background-color: rgba(0, 0, 0, 0.402);
+    text-shadow: 6px 4px 5px rgba(0, 0,0, 0.8);
+}
+
+b{
+font-size: 25px;
+}
+
+#newList{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+#buttons1{
+    text-decoration: none;
+    margin: 20px;
+    border: 1px solid rgba(248, 242, 242, 0.457);
+    padding: 5px 15px;
+    color: aliceblue;
+    background-color: #0e0d0d42;
+    border-radius: 8px;
+    text-transform: uppercase;
+    box-shadow: 5px 0 10px rgba(0, 0,0, 0.8);
+}
+
+#buttons1:hover{
+   background-color:  #0e0d0dbe;;
+}
+
+#BackButton{
+    display: block;
+    width: 125px;
+    padding: 15px 15px;
+    background-color: #9d1212;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 5px 0 10px rgba(0, 0,0, 0.6);
+    color: aliceblue;
+    cursor: pointer;
+    transition: opacity  0.12s ease-in-out, transform  0.12s ease-in-out;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: color 0.12 ease-in-out, background-color  0.12s ease-in-out, transform  0.12s ease-in-out;    
+}
+
+#BackButton:hover{
+    background-color: gold;
+    color: black;
+    transform: scale(1.1);
+    border: 2px solid #9d1212;
+    padding: 13px 13px;
+}
+#Bbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#Wm{
+    font-size: 10px;
+    text-align: center;
+    font-weight: 700;
+    padding: 5px;
+    padding-bottom: 10px;
+    color: white;
+}
